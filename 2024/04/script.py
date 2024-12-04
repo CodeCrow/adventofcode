@@ -77,10 +77,8 @@ def square_search(grid:list[list[str]], x:int, y:int) -> list[list[str]]:
     return square
 
 def square_test(square:list[list[str]])-> int:
-    print(f"SQUARE:{square}")
     mas_one = f"{square[0][0]}{square[1][1]}{square[2][2]}"
     mas_two = f"{square[0][2]}{square[1][1]}{square[2][0]}"
-    print(f"MAS: 1-{mas_one} 2-{mas_two}")
     if (
             (mas_one == 'MAS'
             or mas_one[::-1] == 'MAS')
