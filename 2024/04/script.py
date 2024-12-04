@@ -1,6 +1,3 @@
-import re
-from typing import Any
-
 with open("data_example.dat", "r") as f:
     example_data = f.read().splitlines()
     example_data = [list(line) for line in example_data]
@@ -10,7 +7,7 @@ with open("data.dat", "r") as f:
     data = [list(line) for line in data]
 
 
-def walk_grid(grid:list[list[str]], x:int, y:int) -> int:
+def walk_grid(grid:list[list[str]], x: int, y: int) -> int:
     '''
     We know where to start and the string we are looking for.
     Move in the 8 directions to see if we find it.
@@ -75,6 +72,7 @@ def square_search(grid:list[list[str]], x:int, y:int) -> list[list[str]]:
                     # there is a letter in the 'X' that does not belong
                     return None
             else:
+                # makes the square easier to debug.
                 square[v_y][v_x] = ''
     return square
 
