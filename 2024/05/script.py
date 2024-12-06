@@ -38,8 +38,8 @@ def part_one(rulebook: dict[any, set], data: list[str]) -> int:
     return total_count
 
 
-#assert(part_one(create_rulebook(example_data_rules), example_data_pages), 143)
-#print(f"PART ONE COUNT TOTAL:{part_one(create_rulebook(data_rules), data_pages)}")
+assert(part_one(create_rulebook(example_data_rules), example_data_pages) == 143)
+print(f"PART ONE COUNT TOTAL:{part_one(create_rulebook(data_rules), data_pages)}")
 
 
 def part_two(rulebook: dict[any, set], data: list[str]) -> int:
@@ -73,5 +73,5 @@ def part_two(rulebook: dict[any, set], data: list[str]) -> int:
     return total_count
 
 
-assert(part_one(create_rulebook(example_data_rules), example_data_pages), 123)
+assert(part_one(create_rulebook(example_data_rules), example_data_pages) == 123)
 print(f"PART TWO COUNT TOTAL:{part_two (create_rulebook(data_rules), data_pages)}")
